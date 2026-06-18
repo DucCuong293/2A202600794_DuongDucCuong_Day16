@@ -1,0 +1,1266 @@
+[
+  {
+    "qid": "hp1",
+    "difficulty": "easy",
+    "question": "Which university did the author of The Hobbit teach at?",
+    "gold_answer": "Oxford University",
+    "context": [
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "J. R. R. Tolkien wrote The Hobbit and was a professor at Oxford University."
+      },
+      {
+        "title": "Oxford University",
+        "text": "Oxford University is a collegiate research university in Oxford, England."
+      }
+    ]
+  },
+  {
+    "qid": "hp2",
+    "difficulty": "medium",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ]
+  },
+  {
+    "qid": "hp3",
+    "difficulty": "easy",
+    "question": "What instrument did the composer of The Four Seasons mainly play?",
+    "gold_answer": "violin",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons is a group of violin concertos by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was an Italian Baroque composer and virtuoso violinist."
+      }
+    ]
+  },
+  {
+    "qid": "hp4",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "hp5",
+    "difficulty": "easy",
+    "question": "What field did the scientist who proposed the three laws of motion study in addition to physics?",
+    "gold_answer": "mathematics",
+    "context": [
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton formulated the laws of motion and was a physicist and mathematician."
+      },
+      {
+        "title": "Laws of motion",
+        "text": "The three laws of motion are attributed to Isaac Newton."
+      }
+    ]
+  },
+  {
+    "qid": "hp6",
+    "difficulty": "hard",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ]
+  },
+  {
+    "qid": "hp7",
+    "difficulty": "medium",
+    "question": "Which language family does the primary language of Brazil belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese language",
+        "text": "Portuguese is a Romance language."
+      }
+    ]
+  },
+  {
+    "qid": "hp8",
+    "difficulty": "hard",
+    "question": "Which mountain range contains the highest mountain in the country whose capital is Kathmandu?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Kathmandu",
+        "text": "Kathmandu is the capital city of Nepal."
+      },
+      {
+        "title": "Nepal",
+        "text": "Mount Everest, the highest mountain in Nepal, is part of the Himalayas."
+      }
+    ]
+  },
+  {
+    "qid": "bench1",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Eiffel Tower is located?",
+    "gold_answer": "Paris",
+    "context": [
+      {
+        "title": "The Eiffel Tower",
+        "text": "The eiffel tower is located in France."
+      },
+      {
+        "title": "France",
+        "text": "The capital of France is Paris."
+      }
+    ]
+  },
+  {
+    "qid": "bench2",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Eiffel Tower is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Eiffel Tower",
+        "text": "The eiffel tower is located in France."
+      },
+      {
+        "title": "France",
+        "text": "France is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench3",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Eiffel Tower is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "The Eiffel Tower",
+        "text": "The eiffel tower is located in France."
+      },
+      {
+        "title": "Languages of France",
+        "text": "The official language of France is French."
+      },
+      {
+        "title": "French language",
+        "text": "French belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench4",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Colosseum is located?",
+    "gold_answer": "Rome",
+    "context": [
+      {
+        "title": "The Colosseum",
+        "text": "The colosseum is located in Italy."
+      },
+      {
+        "title": "Italy",
+        "text": "The capital of Italy is Rome."
+      }
+    ]
+  },
+  {
+    "qid": "bench5",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Colosseum is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Colosseum",
+        "text": "The colosseum is located in Italy."
+      },
+      {
+        "title": "Italy",
+        "text": "Italy is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench6",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Colosseum is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "The Colosseum",
+        "text": "The colosseum is located in Italy."
+      },
+      {
+        "title": "Languages of Italy",
+        "text": "The official language of Italy is Italian."
+      },
+      {
+        "title": "Italian language",
+        "text": "Italian belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench7",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Sagrada Familia is located?",
+    "gold_answer": "Madrid",
+    "context": [
+      {
+        "title": "The Sagrada Familia",
+        "text": "The sagrada familia is located in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "The capital of Spain is Madrid."
+      }
+    ]
+  },
+  {
+    "qid": "bench8",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Sagrada Familia is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Sagrada Familia",
+        "text": "The sagrada familia is located in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "Spain is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench9",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Sagrada Familia is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "The Sagrada Familia",
+        "text": "The sagrada familia is located in Spain."
+      },
+      {
+        "title": "Languages of Spain",
+        "text": "The official language of Spain is Spanish."
+      },
+      {
+        "title": "Spanish language",
+        "text": "Spanish belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench10",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Brandenburg Gate is located?",
+    "gold_answer": "Berlin",
+    "context": [
+      {
+        "title": "The Brandenburg Gate",
+        "text": "The brandenburg gate is located in Germany."
+      },
+      {
+        "title": "Germany",
+        "text": "The capital of Germany is Berlin."
+      }
+    ]
+  },
+  {
+    "qid": "bench11",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Brandenburg Gate is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Brandenburg Gate",
+        "text": "The brandenburg gate is located in Germany."
+      },
+      {
+        "title": "Germany",
+        "text": "Germany is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench12",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Brandenburg Gate is located belong to?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "The Brandenburg Gate",
+        "text": "The brandenburg gate is located in Germany."
+      },
+      {
+        "title": "Languages of Germany",
+        "text": "The official language of Germany is German."
+      },
+      {
+        "title": "German language",
+        "text": "German belongs to the Germanic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench13",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Pyramids of Giza is located?",
+    "gold_answer": "Cairo",
+    "context": [
+      {
+        "title": "The Pyramids Of Giza",
+        "text": "The pyramids of giza is located in Egypt."
+      },
+      {
+        "title": "Egypt",
+        "text": "The capital of Egypt is Cairo."
+      }
+    ]
+  },
+  {
+    "qid": "bench14",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Pyramids of Giza is located?",
+    "gold_answer": "Africa",
+    "context": [
+      {
+        "title": "The Pyramids Of Giza",
+        "text": "The pyramids of giza is located in Egypt."
+      },
+      {
+        "title": "Egypt",
+        "text": "Egypt is a country located in Africa."
+      }
+    ]
+  },
+  {
+    "qid": "bench15",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Pyramids of Giza is located belong to?",
+    "gold_answer": "Semitic",
+    "context": [
+      {
+        "title": "The Pyramids Of Giza",
+        "text": "The pyramids of giza is located in Egypt."
+      },
+      {
+        "title": "Languages of Egypt",
+        "text": "The official language of Egypt is Arabic."
+      },
+      {
+        "title": "Arabic language",
+        "text": "Arabic belongs to the Semitic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench16",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Mount Fuji is located?",
+    "gold_answer": "Tokyo",
+    "context": [
+      {
+        "title": "Mount Fuji",
+        "text": "Mount fuji is located in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The capital of Japan is Tokyo."
+      }
+    ]
+  },
+  {
+    "qid": "bench17",
+    "difficulty": "hard",
+    "question": "On which continent is the country where Mount Fuji is located?",
+    "gold_answer": "Asia",
+    "context": [
+      {
+        "title": "Mount Fuji",
+        "text": "Mount fuji is located in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "Japan is a country located in Asia."
+      }
+    ]
+  },
+  {
+    "qid": "bench18",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where Mount Fuji is located belong to?",
+    "gold_answer": "Japonic",
+    "context": [
+      {
+        "title": "Mount Fuji",
+        "text": "Mount fuji is located in Japan."
+      },
+      {
+        "title": "Languages of Japan",
+        "text": "The official language of Japan is Japanese."
+      },
+      {
+        "title": "Japanese language",
+        "text": "Japanese belongs to the Japonic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench19",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Forbidden City is located?",
+    "gold_answer": "Beijing",
+    "context": [
+      {
+        "title": "The Forbidden City",
+        "text": "The forbidden city is located in China."
+      },
+      {
+        "title": "China",
+        "text": "The capital of China is Beijing."
+      }
+    ]
+  },
+  {
+    "qid": "bench20",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Forbidden City is located?",
+    "gold_answer": "Asia",
+    "context": [
+      {
+        "title": "The Forbidden City",
+        "text": "The forbidden city is located in China."
+      },
+      {
+        "title": "China",
+        "text": "China is a country located in Asia."
+      }
+    ]
+  },
+  {
+    "qid": "bench21",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Forbidden City is located belong to?",
+    "gold_answer": "Sino-Tibetan",
+    "context": [
+      {
+        "title": "The Forbidden City",
+        "text": "The forbidden city is located in China."
+      },
+      {
+        "title": "Languages of China",
+        "text": "The official language of China is Mandarin."
+      },
+      {
+        "title": "Mandarin language",
+        "text": "Mandarin belongs to the Sino-Tibetan language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench22",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Taj Mahal is located?",
+    "gold_answer": "New Delhi",
+    "context": [
+      {
+        "title": "The Taj Mahal",
+        "text": "The taj mahal is located in India."
+      },
+      {
+        "title": "India",
+        "text": "The capital of India is New Delhi."
+      }
+    ]
+  },
+  {
+    "qid": "bench23",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Taj Mahal is located?",
+    "gold_answer": "Asia",
+    "context": [
+      {
+        "title": "The Taj Mahal",
+        "text": "The taj mahal is located in India."
+      },
+      {
+        "title": "India",
+        "text": "India is a country located in Asia."
+      }
+    ]
+  },
+  {
+    "qid": "bench24",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Taj Mahal is located belong to?",
+    "gold_answer": "Indo-Aryan",
+    "context": [
+      {
+        "title": "The Taj Mahal",
+        "text": "The taj mahal is located in India."
+      },
+      {
+        "title": "Languages of India",
+        "text": "The official language of India is Hindi."
+      },
+      {
+        "title": "Hindi language",
+        "text": "Hindi belongs to the Indo-Aryan language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench25",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Red Square is located?",
+    "gold_answer": "Moscow",
+    "context": [
+      {
+        "title": "Red Square",
+        "text": "Red square is located in Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "The capital of Russia is Moscow."
+      }
+    ]
+  },
+  {
+    "qid": "bench26",
+    "difficulty": "hard",
+    "question": "On which continent is the country where Red Square is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "Red Square",
+        "text": "Red square is located in Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "Russia is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench27",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where Red Square is located belong to?",
+    "gold_answer": "Slavic",
+    "context": [
+      {
+        "title": "Red Square",
+        "text": "Red square is located in Russia."
+      },
+      {
+        "title": "Languages of Russia",
+        "text": "The official language of Russia is Russian."
+      },
+      {
+        "title": "Russian language",
+        "text": "Russian belongs to the Slavic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench28",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Christ the Redeemer is located?",
+    "gold_answer": "Brasilia",
+    "context": [
+      {
+        "title": "Christ The Redeemer",
+        "text": "Christ the redeemer is located in Brazil."
+      },
+      {
+        "title": "Brazil",
+        "text": "The capital of Brazil is Brasilia."
+      }
+    ]
+  },
+  {
+    "qid": "bench29",
+    "difficulty": "hard",
+    "question": "On which continent is the country where Christ the Redeemer is located?",
+    "gold_answer": "South America",
+    "context": [
+      {
+        "title": "Christ The Redeemer",
+        "text": "Christ the redeemer is located in Brazil."
+      },
+      {
+        "title": "Brazil",
+        "text": "Brazil is a country located in South America."
+      }
+    ]
+  },
+  {
+    "qid": "bench30",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where Christ the Redeemer is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Christ The Redeemer",
+        "text": "Christ the redeemer is located in Brazil."
+      },
+      {
+        "title": "Languages of Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese language",
+        "text": "Portuguese belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench31",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Machu Picchu is located?",
+    "gold_answer": "Lima",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "The capital of Peru is Lima."
+      }
+    ]
+  },
+  {
+    "qid": "bench32",
+    "difficulty": "hard",
+    "question": "On which continent is the country where Machu Picchu is located?",
+    "gold_answer": "South America",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru is a country located in South America."
+      }
+    ]
+  },
+  {
+    "qid": "bench33",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where Machu Picchu is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu picchu is located in Peru."
+      },
+      {
+        "title": "Languages of Peru",
+        "text": "The official language of Peru is Spanish."
+      },
+      {
+        "title": "Spanish language",
+        "text": "Spanish belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench34",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Chichen Itza is located?",
+    "gold_answer": "Mexico City",
+    "context": [
+      {
+        "title": "Chichen Itza",
+        "text": "Chichen itza is located in Mexico."
+      },
+      {
+        "title": "Mexico",
+        "text": "The capital of Mexico is Mexico City."
+      }
+    ]
+  },
+  {
+    "qid": "bench35",
+    "difficulty": "hard",
+    "question": "On which continent is the country where Chichen Itza is located?",
+    "gold_answer": "North America",
+    "context": [
+      {
+        "title": "Chichen Itza",
+        "text": "Chichen itza is located in Mexico."
+      },
+      {
+        "title": "Mexico",
+        "text": "Mexico is a country located in North America."
+      }
+    ]
+  },
+  {
+    "qid": "bench36",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where Chichen Itza is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Chichen Itza",
+        "text": "Chichen itza is located in Mexico."
+      },
+      {
+        "title": "Languages of Mexico",
+        "text": "The official language of Mexico is Spanish."
+      },
+      {
+        "title": "Spanish language",
+        "text": "Spanish belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench37",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Parthenon is located?",
+    "gold_answer": "Athens",
+    "context": [
+      {
+        "title": "The Parthenon",
+        "text": "The parthenon is located in Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "The capital of Greece is Athens."
+      }
+    ]
+  },
+  {
+    "qid": "bench38",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Parthenon is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Parthenon",
+        "text": "The parthenon is located in Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench39",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Parthenon is located belong to?",
+    "gold_answer": "Hellenic",
+    "context": [
+      {
+        "title": "The Parthenon",
+        "text": "The parthenon is located in Greece."
+      },
+      {
+        "title": "Languages of Greece",
+        "text": "The official language of Greece is Greek."
+      },
+      {
+        "title": "Greek language",
+        "text": "Greek belongs to the Hellenic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench40",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Wadi Rum is located?",
+    "gold_answer": "Amman",
+    "context": [
+      {
+        "title": "Wadi Rum",
+        "text": "Wadi rum is located in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "The capital of Jordan is Amman."
+      }
+    ]
+  },
+  {
+    "qid": "bench41",
+    "difficulty": "hard",
+    "question": "On which continent is the country where Wadi Rum is located?",
+    "gold_answer": "Asia",
+    "context": [
+      {
+        "title": "Wadi Rum",
+        "text": "Wadi rum is located in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan is a country located in Asia."
+      }
+    ]
+  },
+  {
+    "qid": "bench42",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where Wadi Rum is located belong to?",
+    "gold_answer": "Semitic",
+    "context": [
+      {
+        "title": "Wadi Rum",
+        "text": "Wadi rum is located in Jordan."
+      },
+      {
+        "title": "Languages of Jordan",
+        "text": "The official language of Jordan is Arabic."
+      },
+      {
+        "title": "Arabic language",
+        "text": "Arabic belongs to the Semitic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench43",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Sydney Opera House is located?",
+    "gold_answer": "Canberra",
+    "context": [
+      {
+        "title": "The Sydney Opera House",
+        "text": "The sydney opera house is located in Australia."
+      },
+      {
+        "title": "Australia",
+        "text": "The capital of Australia is Canberra."
+      }
+    ]
+  },
+  {
+    "qid": "bench44",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Sydney Opera House is located?",
+    "gold_answer": "Oceania",
+    "context": [
+      {
+        "title": "The Sydney Opera House",
+        "text": "The sydney opera house is located in Australia."
+      },
+      {
+        "title": "Australia",
+        "text": "Australia is a country located in Oceania."
+      }
+    ]
+  },
+  {
+    "qid": "bench45",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Sydney Opera House is located belong to?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "The Sydney Opera House",
+        "text": "The sydney opera house is located in Australia."
+      },
+      {
+        "title": "Languages of Australia",
+        "text": "The official language of Australia is English."
+      },
+      {
+        "title": "English language",
+        "text": "English belongs to the Germanic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench46",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Hagia Sophia is located?",
+    "gold_answer": "Ankara",
+    "context": [
+      {
+        "title": "The Hagia Sophia",
+        "text": "The hagia sophia is located in Turkey."
+      },
+      {
+        "title": "Turkey",
+        "text": "The capital of Turkey is Ankara."
+      }
+    ]
+  },
+  {
+    "qid": "bench47",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Hagia Sophia is located?",
+    "gold_answer": "Asia",
+    "context": [
+      {
+        "title": "The Hagia Sophia",
+        "text": "The hagia sophia is located in Turkey."
+      },
+      {
+        "title": "Turkey",
+        "text": "Turkey is a country located in Asia."
+      }
+    ]
+  },
+  {
+    "qid": "bench48",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Hagia Sophia is located belong to?",
+    "gold_answer": "Turkic",
+    "context": [
+      {
+        "title": "The Hagia Sophia",
+        "text": "The hagia sophia is located in Turkey."
+      },
+      {
+        "title": "Languages of Turkey",
+        "text": "The official language of Turkey is Turkish."
+      },
+      {
+        "title": "Turkish language",
+        "text": "Turkish belongs to the Turkic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench49",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Grand Palace is located?",
+    "gold_answer": "Bangkok",
+    "context": [
+      {
+        "title": "The Grand Palace",
+        "text": "The grand palace is located in Thailand."
+      },
+      {
+        "title": "Thailand",
+        "text": "The capital of Thailand is Bangkok."
+      }
+    ]
+  },
+  {
+    "qid": "bench50",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Grand Palace is located?",
+    "gold_answer": "Asia",
+    "context": [
+      {
+        "title": "The Grand Palace",
+        "text": "The grand palace is located in Thailand."
+      },
+      {
+        "title": "Thailand",
+        "text": "Thailand is a country located in Asia."
+      }
+    ]
+  },
+  {
+    "qid": "bench51",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Grand Palace is located belong to?",
+    "gold_answer": "Kra-Dai",
+    "context": [
+      {
+        "title": "The Grand Palace",
+        "text": "The grand palace is located in Thailand."
+      },
+      {
+        "title": "Languages of Thailand",
+        "text": "The official language of Thailand is Thai."
+      },
+      {
+        "title": "Thai language",
+        "text": "Thai belongs to the Kra-Dai language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench52",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Belem Tower is located?",
+    "gold_answer": "Lisbon",
+    "context": [
+      {
+        "title": "The Belem Tower",
+        "text": "The belem tower is located in Portugal."
+      },
+      {
+        "title": "Portugal",
+        "text": "The capital of Portugal is Lisbon."
+      }
+    ]
+  },
+  {
+    "qid": "bench53",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Belem Tower is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Belem Tower",
+        "text": "The belem tower is located in Portugal."
+      },
+      {
+        "title": "Portugal",
+        "text": "Portugal is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench54",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Belem Tower is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "The Belem Tower",
+        "text": "The belem tower is located in Portugal."
+      },
+      {
+        "title": "Languages of Portugal",
+        "text": "The official language of Portugal is Portuguese."
+      },
+      {
+        "title": "Portuguese language",
+        "text": "Portuguese belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench55",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Anne Frank House is located?",
+    "gold_answer": "Amsterdam",
+    "context": [
+      {
+        "title": "The Anne Frank House",
+        "text": "The anne frank house is located in Netherlands."
+      },
+      {
+        "title": "Netherlands",
+        "text": "The capital of Netherlands is Amsterdam."
+      }
+    ]
+  },
+  {
+    "qid": "bench56",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Anne Frank House is located?",
+    "gold_answer": "Europe",
+    "context": [
+      {
+        "title": "The Anne Frank House",
+        "text": "The anne frank house is located in Netherlands."
+      },
+      {
+        "title": "Netherlands",
+        "text": "Netherlands is a country located in Europe."
+      }
+    ]
+  },
+  {
+    "qid": "bench57",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Anne Frank House is located belong to?",
+    "gold_answer": "Germanic",
+    "context": [
+      {
+        "title": "The Anne Frank House",
+        "text": "The anne frank house is located in Netherlands."
+      },
+      {
+        "title": "Languages of Netherlands",
+        "text": "The official language of Netherlands is Dutch."
+      },
+      {
+        "title": "Dutch language",
+        "text": "Dutch belongs to the Germanic language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench58",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where the Iguazu Falls is located?",
+    "gold_answer": "Buenos Aires",
+    "context": [
+      {
+        "title": "The Iguazu Falls",
+        "text": "The iguazu falls is located in Argentina."
+      },
+      {
+        "title": "Argentina",
+        "text": "The capital of Argentina is Buenos Aires."
+      }
+    ]
+  },
+  {
+    "qid": "bench59",
+    "difficulty": "hard",
+    "question": "On which continent is the country where the Iguazu Falls is located?",
+    "gold_answer": "South America",
+    "context": [
+      {
+        "title": "The Iguazu Falls",
+        "text": "The iguazu falls is located in Argentina."
+      },
+      {
+        "title": "Argentina",
+        "text": "Argentina is a country located in South America."
+      }
+    ]
+  },
+  {
+    "qid": "bench60",
+    "difficulty": "easy",
+    "question": "What language family does the official language of the country where the Iguazu Falls is located belong to?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "The Iguazu Falls",
+        "text": "The iguazu falls is located in Argentina."
+      },
+      {
+        "title": "Languages of Argentina",
+        "text": "The official language of Argentina is Spanish."
+      },
+      {
+        "title": "Spanish language",
+        "text": "Spanish belongs to the Romance language family."
+      }
+    ]
+  },
+  {
+    "qid": "bench61",
+    "difficulty": "hard",
+    "question": "What are the official languages of the country where the Atomium is located?",
+    "gold_answer": "Dutch, French, and German",
+    "context": [
+      {
+        "title": "The Atomium",
+        "text": "The atomium is located in Belgium."
+      },
+      {
+        "title": "Languages of Belgium",
+        "text": "The official languages of Belgium are Dutch, French, and German."
+      }
+    ]
+  },
+  {
+    "qid": "bench62",
+    "difficulty": "hard",
+    "question": "What are the official languages of the country where the Matterhorn is located?",
+    "gold_answer": "German, French, Italian, and Romansh",
+    "context": [
+      {
+        "title": "The Matterhorn",
+        "text": "The matterhorn is located in Switzerland."
+      },
+      {
+        "title": "Languages of Switzerland",
+        "text": "The official languages of Switzerland are German, French, Italian, and Romansh."
+      }
+    ]
+  },
+  {
+    "qid": "bench63",
+    "difficulty": "hard",
+    "question": "What are the official languages of the country where the CN Tower is located?",
+    "gold_answer": "English and French",
+    "context": [
+      {
+        "title": "The Cn Tower",
+        "text": "The cn tower is located in Canada."
+      },
+      {
+        "title": "Languages of Canada",
+        "text": "The official languages of Canada are English and French."
+      }
+    ]
+  },
+  {
+    "qid": "bench64",
+    "difficulty": "hard",
+    "question": "What are the official languages of the country where the Marina Bay Sands is located?",
+    "gold_answer": "English, Malay, Mandarin, and Tamil",
+    "context": [
+      {
+        "title": "The Marina Bay Sands",
+        "text": "The marina bay sands is located in Singapore."
+      },
+      {
+        "title": "Languages of Singapore",
+        "text": "The official languages of Singapore are English, Malay, Mandarin, and Tamil."
+      }
+    ]
+  },
+  {
+    "qid": "bench65",
+    "difficulty": "hard",
+    "question": "What are the official languages of the country where the Bock Casemates is located?",
+    "gold_answer": "Luxembourgish, French, and German",
+    "context": [
+      {
+        "title": "The Bock Casemates",
+        "text": "The bock casemates is located in Luxembourg."
+      },
+      {
+        "title": "Languages of Luxembourg",
+        "text": "The official languages of Luxembourg are Luxembourgish, French, and German."
+      }
+    ]
+  },
+  {
+    "qid": "bench66",
+    "difficulty": "hard",
+    "question": "What are the official languages of the country where the Cliffs of Moher is located?",
+    "gold_answer": "Irish and English",
+    "context": [
+      {
+        "title": "The Cliffs Of Moher",
+        "text": "The cliffs of moher is located in Ireland."
+      },
+      {
+        "title": "Languages of Ireland",
+        "text": "The official languages of Ireland are Irish and English."
+      }
+    ]
+  }
+]

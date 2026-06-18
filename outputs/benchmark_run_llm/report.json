@@ -1,0 +1,1555 @@
+{
+  "meta": {
+    "dataset": "benchmark_set.json",
+    "mode": "llm",
+    "num_records": 148,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 74,
+      "em": 1.0,
+      "avg_attempts": 1,
+      "avg_token_estimate": 584.35,
+      "avg_latency_ms": 3195.34
+    },
+    "reflexion": {
+      "count": 74,
+      "em": 1.0,
+      "avg_attempts": 1,
+      "avg_token_estimate": 586.68,
+      "avg_latency_ms": 3068.5
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.0,
+      "attempts_abs": 0,
+      "tokens_abs": 2.33,
+      "latency_abs": -126.84
+    }
+  },
+  "failure_modes": {
+    "entity_drift": {
+      "description": "The agent completed the hops but latched onto the wrong final entity.",
+      "react": 0,
+      "reflexion": 0,
+      "total": 0
+    },
+    "incomplete_multi_hop": {
+      "description": "The agent answered the first hop but never completed the remaining hop(s).",
+      "react": 0,
+      "reflexion": 0,
+      "total": 0
+    },
+    "looping": {
+      "description": "The agent repeated the same wrong answer across attempts without progress.",
+      "react": 0,
+      "reflexion": 0,
+      "total": 0
+    },
+    "reflection_overfit": {
+      "description": "A reflection over-corrected and pushed the agent away from the right answer.",
+      "react": 0,
+      "reflexion": 0,
+      "total": 0
+    },
+    "wrong_final_answer": {
+      "description": "The final answer was wrong for a reason not captured by a more specific mode.",
+      "react": 0,
+      "reflexion": 0,
+      "total": 0
+    }
+  },
+  "examples": [
+    {
+      "qid": "hp1",
+      "agent_type": "react",
+      "gold_answer": "Oxford University",
+      "predicted_answer": "Oxford University",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp2",
+      "agent_type": "react",
+      "gold_answer": "River Thames",
+      "predicted_answer": "River Thames",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp3",
+      "agent_type": "react",
+      "gold_answer": "violin",
+      "predicted_answer": "violin",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp4",
+      "agent_type": "react",
+      "gold_answer": "Pacific Ocean",
+      "predicted_answer": "Pacific Ocean",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp5",
+      "agent_type": "react",
+      "gold_answer": "mathematics",
+      "predicted_answer": "mathematics",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp6",
+      "agent_type": "react",
+      "gold_answer": "Dead Sea",
+      "predicted_answer": "Dead Sea",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp7",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp8",
+      "agent_type": "react",
+      "gold_answer": "Himalayas",
+      "predicted_answer": "Himalayas",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench1",
+      "agent_type": "react",
+      "gold_answer": "Paris",
+      "predicted_answer": "Paris",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench2",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench3",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench4",
+      "agent_type": "react",
+      "gold_answer": "Rome",
+      "predicted_answer": "Rome",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench5",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench6",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench7",
+      "agent_type": "react",
+      "gold_answer": "Madrid",
+      "predicted_answer": "Madrid",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench8",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench9",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench10",
+      "agent_type": "react",
+      "gold_answer": "Berlin",
+      "predicted_answer": "Berlin",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench11",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench12",
+      "agent_type": "react",
+      "gold_answer": "Germanic",
+      "predicted_answer": "Germanic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench13",
+      "agent_type": "react",
+      "gold_answer": "Cairo",
+      "predicted_answer": "Cairo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench14",
+      "agent_type": "react",
+      "gold_answer": "Africa",
+      "predicted_answer": "Africa",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench15",
+      "agent_type": "react",
+      "gold_answer": "Semitic",
+      "predicted_answer": "Semitic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench16",
+      "agent_type": "react",
+      "gold_answer": "Tokyo",
+      "predicted_answer": "Tokyo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench17",
+      "agent_type": "react",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench18",
+      "agent_type": "react",
+      "gold_answer": "Japonic",
+      "predicted_answer": "Japonic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench19",
+      "agent_type": "react",
+      "gold_answer": "Beijing",
+      "predicted_answer": "Beijing",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench20",
+      "agent_type": "react",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench21",
+      "agent_type": "react",
+      "gold_answer": "Sino-Tibetan",
+      "predicted_answer": "Sino-Tibetan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench22",
+      "agent_type": "react",
+      "gold_answer": "New Delhi",
+      "predicted_answer": "New Delhi",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench23",
+      "agent_type": "react",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench24",
+      "agent_type": "react",
+      "gold_answer": "Indo-Aryan",
+      "predicted_answer": "Indo-Aryan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench25",
+      "agent_type": "react",
+      "gold_answer": "Moscow",
+      "predicted_answer": "Moscow",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench26",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench27",
+      "agent_type": "react",
+      "gold_answer": "Slavic",
+      "predicted_answer": "Slavic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench28",
+      "agent_type": "react",
+      "gold_answer": "Brasilia",
+      "predicted_answer": "Brasilia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench29",
+      "agent_type": "react",
+      "gold_answer": "South America",
+      "predicted_answer": "South America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench30",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance language family",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench31",
+      "agent_type": "react",
+      "gold_answer": "Lima",
+      "predicted_answer": "Lima",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench32",
+      "agent_type": "react",
+      "gold_answer": "South America",
+      "predicted_answer": "South America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench33",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench34",
+      "agent_type": "react",
+      "gold_answer": "Mexico City",
+      "predicted_answer": "Mexico City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench35",
+      "agent_type": "react",
+      "gold_answer": "North America",
+      "predicted_answer": "North America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench36",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench37",
+      "agent_type": "react",
+      "gold_answer": "Athens",
+      "predicted_answer": "Athens",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench38",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench39",
+      "agent_type": "react",
+      "gold_answer": "Hellenic",
+      "predicted_answer": "Hellenic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench40",
+      "agent_type": "react",
+      "gold_answer": "Amman",
+      "predicted_answer": "Amman",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench41",
+      "agent_type": "react",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench42",
+      "agent_type": "react",
+      "gold_answer": "Semitic",
+      "predicted_answer": "Semitic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench43",
+      "agent_type": "react",
+      "gold_answer": "Canberra",
+      "predicted_answer": "Canberra",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench44",
+      "agent_type": "react",
+      "gold_answer": "Oceania",
+      "predicted_answer": "Oceania",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench45",
+      "agent_type": "react",
+      "gold_answer": "Germanic",
+      "predicted_answer": "Germanic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench46",
+      "agent_type": "react",
+      "gold_answer": "Ankara",
+      "predicted_answer": "Ankara",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench47",
+      "agent_type": "react",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench48",
+      "agent_type": "react",
+      "gold_answer": "Turkic",
+      "predicted_answer": "Turkic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench49",
+      "agent_type": "react",
+      "gold_answer": "Bangkok",
+      "predicted_answer": "Bangkok",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench50",
+      "agent_type": "react",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench51",
+      "agent_type": "react",
+      "gold_answer": "Kra-Dai",
+      "predicted_answer": "Kra-Dai",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench52",
+      "agent_type": "react",
+      "gold_answer": "Lisbon",
+      "predicted_answer": "Lisbon",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench53",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench54",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench55",
+      "agent_type": "react",
+      "gold_answer": "Amsterdam",
+      "predicted_answer": "Amsterdam",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench56",
+      "agent_type": "react",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench57",
+      "agent_type": "react",
+      "gold_answer": "Germanic",
+      "predicted_answer": "Germanic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench58",
+      "agent_type": "react",
+      "gold_answer": "Buenos Aires",
+      "predicted_answer": "Buenos Aires",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench59",
+      "agent_type": "react",
+      "gold_answer": "South America",
+      "predicted_answer": "South America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench60",
+      "agent_type": "react",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench61",
+      "agent_type": "react",
+      "gold_answer": "Dutch, French, and German",
+      "predicted_answer": "Dutch, French, and German",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench62",
+      "agent_type": "react",
+      "gold_answer": "German, French, Italian, and Romansh",
+      "predicted_answer": "German, French, Italian, Romansh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench63",
+      "agent_type": "react",
+      "gold_answer": "English and French",
+      "predicted_answer": "English and French",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench64",
+      "agent_type": "react",
+      "gold_answer": "English, Malay, Mandarin, and Tamil",
+      "predicted_answer": "English, Malay, Mandarin, Tamil",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench65",
+      "agent_type": "react",
+      "gold_answer": "Luxembourgish, French, and German",
+      "predicted_answer": "Luxembourgish, French, German",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench66",
+      "agent_type": "react",
+      "gold_answer": "Irish and English",
+      "predicted_answer": "Irish and English",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp1",
+      "agent_type": "reflexion",
+      "gold_answer": "Oxford University",
+      "predicted_answer": "Oxford University",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp2",
+      "agent_type": "reflexion",
+      "gold_answer": "River Thames",
+      "predicted_answer": "River Thames",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp3",
+      "agent_type": "reflexion",
+      "gold_answer": "violin",
+      "predicted_answer": "violin",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp4",
+      "agent_type": "reflexion",
+      "gold_answer": "Pacific Ocean",
+      "predicted_answer": "Pacific Ocean",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp5",
+      "agent_type": "reflexion",
+      "gold_answer": "mathematics",
+      "predicted_answer": "mathematics",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp6",
+      "agent_type": "reflexion",
+      "gold_answer": "Dead Sea",
+      "predicted_answer": "Dead Sea",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp7",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "hp8",
+      "agent_type": "reflexion",
+      "gold_answer": "Himalayas",
+      "predicted_answer": "Himalayas",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench1",
+      "agent_type": "reflexion",
+      "gold_answer": "Paris",
+      "predicted_answer": "Paris",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench2",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench3",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench4",
+      "agent_type": "reflexion",
+      "gold_answer": "Rome",
+      "predicted_answer": "Rome",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench5",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench6",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench7",
+      "agent_type": "reflexion",
+      "gold_answer": "Madrid",
+      "predicted_answer": "Madrid",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench8",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench9",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench10",
+      "agent_type": "reflexion",
+      "gold_answer": "Berlin",
+      "predicted_answer": "Berlin",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench11",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench12",
+      "agent_type": "reflexion",
+      "gold_answer": "Germanic",
+      "predicted_answer": "Germanic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench13",
+      "agent_type": "reflexion",
+      "gold_answer": "Cairo",
+      "predicted_answer": "Cairo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench14",
+      "agent_type": "reflexion",
+      "gold_answer": "Africa",
+      "predicted_answer": "Africa",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench15",
+      "agent_type": "reflexion",
+      "gold_answer": "Semitic",
+      "predicted_answer": "Semitic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench16",
+      "agent_type": "reflexion",
+      "gold_answer": "Tokyo",
+      "predicted_answer": "Tokyo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench17",
+      "agent_type": "reflexion",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench18",
+      "agent_type": "reflexion",
+      "gold_answer": "Japonic",
+      "predicted_answer": "Japonic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench19",
+      "agent_type": "reflexion",
+      "gold_answer": "Beijing",
+      "predicted_answer": "Beijing",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench20",
+      "agent_type": "reflexion",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench21",
+      "agent_type": "reflexion",
+      "gold_answer": "Sino-Tibetan",
+      "predicted_answer": "Sino-Tibetan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench22",
+      "agent_type": "reflexion",
+      "gold_answer": "New Delhi",
+      "predicted_answer": "New Delhi",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench23",
+      "agent_type": "reflexion",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench24",
+      "agent_type": "reflexion",
+      "gold_answer": "Indo-Aryan",
+      "predicted_answer": "Indo-Aryan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench25",
+      "agent_type": "reflexion",
+      "gold_answer": "Moscow",
+      "predicted_answer": "Moscow",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench26",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench27",
+      "agent_type": "reflexion",
+      "gold_answer": "Slavic",
+      "predicted_answer": "Slavic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench28",
+      "agent_type": "reflexion",
+      "gold_answer": "Brasilia",
+      "predicted_answer": "Brasilia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench29",
+      "agent_type": "reflexion",
+      "gold_answer": "South America",
+      "predicted_answer": "South America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench30",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance language family",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench31",
+      "agent_type": "reflexion",
+      "gold_answer": "Lima",
+      "predicted_answer": "Lima",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench32",
+      "agent_type": "reflexion",
+      "gold_answer": "South America",
+      "predicted_answer": "South America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench33",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench34",
+      "agent_type": "reflexion",
+      "gold_answer": "Mexico City",
+      "predicted_answer": "Mexico City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench35",
+      "agent_type": "reflexion",
+      "gold_answer": "North America",
+      "predicted_answer": "North America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench36",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench37",
+      "agent_type": "reflexion",
+      "gold_answer": "Athens",
+      "predicted_answer": "Athens",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench38",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench39",
+      "agent_type": "reflexion",
+      "gold_answer": "Hellenic",
+      "predicted_answer": "Hellenic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench40",
+      "agent_type": "reflexion",
+      "gold_answer": "Amman",
+      "predicted_answer": "Amman",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench41",
+      "agent_type": "reflexion",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench42",
+      "agent_type": "reflexion",
+      "gold_answer": "Semitic",
+      "predicted_answer": "Semitic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench43",
+      "agent_type": "reflexion",
+      "gold_answer": "Canberra",
+      "predicted_answer": "Canberra",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench44",
+      "agent_type": "reflexion",
+      "gold_answer": "Oceania",
+      "predicted_answer": "Oceania",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench45",
+      "agent_type": "reflexion",
+      "gold_answer": "Germanic",
+      "predicted_answer": "Germanic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench46",
+      "agent_type": "reflexion",
+      "gold_answer": "Ankara",
+      "predicted_answer": "Ankara",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench47",
+      "agent_type": "reflexion",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench48",
+      "agent_type": "reflexion",
+      "gold_answer": "Turkic",
+      "predicted_answer": "Turkic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench49",
+      "agent_type": "reflexion",
+      "gold_answer": "Bangkok",
+      "predicted_answer": "Bangkok",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench50",
+      "agent_type": "reflexion",
+      "gold_answer": "Asia",
+      "predicted_answer": "Asia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench51",
+      "agent_type": "reflexion",
+      "gold_answer": "Kra-Dai",
+      "predicted_answer": "Kra-Dai",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench52",
+      "agent_type": "reflexion",
+      "gold_answer": "Lisbon",
+      "predicted_answer": "Lisbon",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench53",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench54",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench55",
+      "agent_type": "reflexion",
+      "gold_answer": "Amsterdam",
+      "predicted_answer": "Amsterdam",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench56",
+      "agent_type": "reflexion",
+      "gold_answer": "Europe",
+      "predicted_answer": "Europe",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench57",
+      "agent_type": "reflexion",
+      "gold_answer": "Germanic",
+      "predicted_answer": "Germanic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench58",
+      "agent_type": "reflexion",
+      "gold_answer": "Buenos Aires",
+      "predicted_answer": "Buenos Aires",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench59",
+      "agent_type": "reflexion",
+      "gold_answer": "South America",
+      "predicted_answer": "South America",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench60",
+      "agent_type": "reflexion",
+      "gold_answer": "Romance",
+      "predicted_answer": "Romance",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench61",
+      "agent_type": "reflexion",
+      "gold_answer": "Dutch, French, and German",
+      "predicted_answer": "Dutch, French, and German",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench62",
+      "agent_type": "reflexion",
+      "gold_answer": "German, French, Italian, and Romansh",
+      "predicted_answer": "German, French, Italian, Romansh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench63",
+      "agent_type": "reflexion",
+      "gold_answer": "English and French",
+      "predicted_answer": "English and French",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench64",
+      "agent_type": "reflexion",
+      "gold_answer": "English, Malay, Mandarin, and Tamil",
+      "predicted_answer": "English, Malay, Mandarin, Tamil",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench65",
+      "agent_type": "reflexion",
+      "gold_answer": "Luxembourgish, French, and German",
+      "predicted_answer": "Luxembourgish, French, and German",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "bench66",
+      "agent_type": "reflexion",
+      "gold_answer": "Irish and English",
+      "predicted_answer": "Irish and English",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "adaptive_max_attempts",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "Reflexion lifted exact-match from 1.0 (ReAct) to 1.0 (delta 0.0). The gain comes from the self-reflection loop: when the first attempt stops after the first hop (incomplete_multi_hop) or drifts to the wrong second-hop entity (entity_drift), the Reflector turns the judge's structured feedback into an explicit next strategy that is written into the Actor's reflection memory and applied on the retry. This is paid for in compute: average attempts rose by 0, tokens by 2.33, and latency by -126.84 ms. Failure modes most reduced by reflection were: none; modes still present under Reflexion were: none. Two limits remain: reflection cannot fix an answer the Evaluator grades incorrectly (evaluator quality bounds the ceiling), and a misguided reflection can over-correct (reflection_overfit), which the adaptive_max_attempts loop guards against by stopping early once an answer starts repeating (looping)."
+}
